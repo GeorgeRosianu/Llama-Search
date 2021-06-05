@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Llama_Search_Alpha.Pages.Admin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Llama_Search_Alpha.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="675" d:DesignWidth="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Name="btnAddWord" Content="Add" Width="200" Height="50" Margin="5" Style="{StaticResource btn}" Click="btnAddWord_Click"/>
+            <Button Name="btnEditWord" Content="Edit" Width="200" Height="50" Margin="5" Style="{StaticResource btn}" Click="btnEditWord_Click"/>
+            <Button Name="btnRemoveWord" Content="Remove" Width="200" Height="50" Margin="5" Style="{StaticResource btn}" Click="btnRemoveWord_Click"/>
+        </StackPanel>
+        <local:SwitcherMenu VerticalAlignment="Top" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/llamaBlurred.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+    </Grid>
+</UserControl>

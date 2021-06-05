@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Llama_Search_Alpha.Pages.WordPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Llama_Search_Alpha.Pages"
+             mc:Ignorable="d" 
+             d:DesignHeight="675" d:DesignWidth="1200">
+    <Grid>
+        <local:SwitcherMenu VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,10,10,10">
+            <GroupBox Header="Word Details" FontSize="15" FontWeight="Bold" Foreground="White" Margin="0,0,0,0">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Label Content="Name: " HorizontalAlignment="Left" Width="150" Foreground="White" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                        <TextBlock Name="wordName" Margin="5" Width="200" Height="25" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Label Content="Category: " HorizontalAlignment="Left" Width="150" Foreground="White" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                        <TextBlock Name="wordCategory" Margin="5" Width="200" Height="25" Foreground="White" FontSize="15" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Label Content="Description: " HorizontalAlignment="Left" Width="150" Foreground="White" FontSize="15" FontWeight="Bold" VerticalAlignment="Top"/>
+                        <TextBlock Name="wordDescription" Margin="5" Width="200" Height="100" Foreground="White" FontSize="15" TextWrapping="Wrap"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <Label Content="Image: " HorizontalAlignment="Left" Width="150" Foreground="White" FontSize="15" FontWeight="Bold" VerticalAlignment="Center"/>
+                        <Image Name="wordImage" Margin="5" Width="200" Height="50" Source="/Images/noImage.png" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Images/llamaBlurred.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+    </Grid>
+</UserControl>
